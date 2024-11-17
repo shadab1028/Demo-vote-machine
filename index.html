@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Voting Machine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<header>
+        <h2>२४९ - सोलापूर शहर मध्य विधानसभा मतदारसंघ डमी मतदान यं</h2>
+    </header>
+    <!-- Centered Header 2 with Shape -->
+    <div class="alert-box">
+        <p>डेमो मतदानासाठी "Apple 10th button" समोरील निळे बटण दाबा</p>
+    </div>
+
+<body>
+    <div class="container">
+        <h1>Voting Machine</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>S.No</th>
+                    <th colspan="2">Name of Candidate</th>
+                    <th>Election Symbol</th>
+                    <th>Bulb</th>
+                    <th>Button</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Other candidates -->
+                <tr>
+                    <td>1.</td>
+                    <td colspan="2"></td>
+                    <td></td>
+                    <td>🔵</td>
+                    <td><button disabled>Vote</button></td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td colspan="2"></td>
+                    <td></td>
+                    <td>🔵</td>
+                    <td><button disabled>Vote</button></td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td colspan="2"></td>
+                    <td></td>
+                    <td>🔵</td>
+                    <td><button disabled>Vote</button></td>
+                </tr>
+                <tr>
+                    <td>4.</td>
+                    <td colspan="2"></td>
+                    <td></td>
+                    <td>🔵</td>
+                    <td><button disabled>Vote</button></td>
+                </tr>
+                <tr>
+                    <td>5.</td>
+                    <td colspan="2"></td>
+                    <td></td>
+                    <td>🔵</td>
+                    <td><button disabled>Vote</button></td>
+                </tr>
+                <tr>
+                    <td>6.</td>
+                    <td colspan="2"></td>
+                    <td></td>
+                    <td>🔵</td>
+                    <td><button disabled>Vote</button></td>
+                </tr>
+                <tr>
+                    <td>7.</td>
+                    <td colspan="2"></td>
+                    <td></td>
+                    <td>🔵</td>
+                    <td><button disabled>Vote</button></td>
+                </tr>
+                <tr>
+                    <td>8.</td>
+                    <td colspan="2"></td>
+                    <td></td>
+                    <td>🔵</td>
+                    <td><button disabled>Vote</button></td>
+                </tr>
+                <tr>
+                    <td>9.</td>
+                    <td colspan="2"></td>
+                    <td></td>
+                    <td>🔵</td>
+                    <td><button disabled>Vote</button></td>
+                </tr>
+              
+                <!-- 10th Candidate -->
+                <tr>
+                    <td>10.</td>
+                    <td>Taufique Ismail Shaikh</td>
+                    <td><img src="imagescandidate-10.jpg" alt="Candidate Image" style="width: 50px; height: 50px;"></td>
+                    <td><img src="symbol.png" alt="Election Symbol" style="width: 50px; height: 50px;"></td>
+                    <td>🔵</td>
+                    <td><button id="btn-10" onclick="vote(10)">Vote</button></td>
+                </tr>
+                <!-- Other candidates -->
+                <tr>
+                    <td>11.</td>
+                    <td colspan="2"></td>
+                    <td></td>
+                    <td>🔵</td>
+                    <td><button disabled>Vote</button></td>
+                </tr>
+                 <tr>
+                    <td>12.</td>
+                    <td colspan="2"></td>
+                    <td></td>
+                    <td>🔵</td>
+                    <td><button disabled>Vote</button></td>
+                </tr>
+                 <tr>
+                    <td>13.</td>
+                    <td colspan="2"></td>
+                    <td></td>
+                    <td>🔵</td>
+                    <td><button disabled>Vote</button></td>
+                </tr>
+                 <tr>
+                    <td>14.</td>
+                    <td colspan="2"></td>
+                    <td></td>
+                    <td>🔵</td>
+                    <td><button disabled>Vote</button></td>
+                </tr>
+                 <tr>
+                    <td>15.</td>
+                    <td colspan="2"></td>
+                    <td></td>
+                    <td>🔵</td>
+                    <td><button disabled>Vote</button></td>
+                </tr>
+                 <tr>
+                    <td>16.</td>
+                    <td colspan="2"></td>
+                    <td></td>
+                    <td>🔵</td>
+                    <td><button disabled>Vote</button></td>
+                </tr>
+                 <tr>
+                    <td>17.</td>
+                    <td colspan="2"></td>
+                    <td></td>
+                    <td>🔵</td>
+                    <td><button disabled>Vote</button></td>
+                </tr>
+                 <tr>
+                    <td>18.</td>
+                    <td colspan="2"></td>
+                    <td></td>
+                    <td>🔵</td>
+                    <td><button disabled>Vote</button></td>
+                </tr>
+                 <tr>
+                    <td>19.</td>
+                    <td colspan="2"></td>
+                    <td></td>
+                    <td>🔵</td>
+                    <td><button disabled>Vote</button></td>
+                </tr>
+                 <tr>
+                    <td>20.</td>
+                    <td colspan="2"></td>
+                    <td></td>
+                    <td>🔵</td>
+                    <td><button disabled>Vote</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Message Area -->
+        <div id="message-area" class="hidden message-container"></div>
+    </div>
+
+    <!-- Beep sound -->
+    <audio id="beep-sound" src="beep.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,75 @@
+/* General Styling */
+.container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #000;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Button Styles */
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Message Styling */
+.hidden {
+    display: none;
+}
+
+.message-container {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+/* Centered Header */
+header {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+/* Header 2 with Light Red Background */
+.alert-box {
+    background-color: #f8d7da; /* Light Red */
+    color: #721c24; /* Dark Red Text */
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px auto;
+    width: 80%;
+}
